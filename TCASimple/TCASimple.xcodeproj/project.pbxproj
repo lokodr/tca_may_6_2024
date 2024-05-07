@@ -15,6 +15,8 @@
 		1D4276CA2BE9B0B9005D6259 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276C92BE9B0B9005D6259 /* BookListView.swift */; };
 		1D4276CC2BE9B1A9005D6259 /* BookListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276CB2BE9B1A9005D6259 /* BookListReducer.swift */; };
 		1D4276CE2BE9B2CC005D6259 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276CD2BE9B2CC005D6259 /* Book.swift */; };
+		1D4276D02BEAECDB005D6259 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276CF2BEAECDB005D6259 /* Character.swift */; };
+		1D4276D22BEAED40005D6259 /* BookDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276D12BEAED40005D6259 /* BookDetailReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1D4276C92BE9B0B9005D6259 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		1D4276CB2BE9B1A9005D6259 /* BookListReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListReducer.swift; sourceTree = "<group>"; };
 		1D4276CD2BE9B2CC005D6259 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		1D4276CF2BEAECDB005D6259 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		1D4276D12BEAED40005D6259 /* BookDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				1D4276CB2BE9B1A9005D6259 /* BookListReducer.swift */,
 				1D4276BA2BE9ADFA005D6259 /* ContentView.swift */,
 				1D4276CD2BE9B2CC005D6259 /* Book.swift */,
+				1D4276D12BEAED40005D6259 /* BookDetailReducer.swift */,
+				1D4276CF2BEAECDB005D6259 /* Character.swift */,
 				1D4276BC2BE9ADFB005D6259 /* Assets.xcassets */,
 				1D4276BE2BE9ADFB005D6259 /* Preview Content */,
 			);
@@ -156,7 +162,9 @@
 			files = (
 				1D4276BB2BE9ADFA005D6259 /* ContentView.swift in Sources */,
 				1D4276CC2BE9B1A9005D6259 /* BookListReducer.swift in Sources */,
+				1D4276D22BEAED40005D6259 /* BookDetailReducer.swift in Sources */,
 				1D4276CA2BE9B0B9005D6259 /* BookListView.swift in Sources */,
+				1D4276D02BEAECDB005D6259 /* Character.swift in Sources */,
 				1D4276CE2BE9B2CC005D6259 /* Book.swift in Sources */,
 				1D4276B92BE9ADFA005D6259 /* TCASimpleApp.swift in Sources */,
 			);

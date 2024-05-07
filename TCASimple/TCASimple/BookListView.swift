@@ -14,6 +14,8 @@ struct BookListView: View {
             /*
              To update our view as this “store” changes, we need to use a structure called “WithViewStore”. This structure takes the “store” variable as a parameter and the scope we want to observe. Defining the observe scope as “{ $0 }” means it will observe all parameters in the State we created within the Reducer.
              */
+            
+            //public struct WithViewStore<ViewState, ViewAction, Content: View>: View
             WithViewStore(self.store, observe: { $0 }) { viewStore in
                 List {
                     if let books = viewStore.books {
