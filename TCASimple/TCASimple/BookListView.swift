@@ -24,18 +24,17 @@ struct BookListView: View {
                         Text("Book list is empty, refresh the page.")
                     }
                 }
-                Text("Hello, World!")
-                    .navigationTitle("Books")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar(content: {
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Button {
-                                
-                            } label: {
-                                Text("refresh")
-                            }
+                .navigationTitle("Books")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            viewStore.send(.fetchBooks)
+                        } label: {
+                            Text("refresh")
                         }
-                    })
+                    }
+                })
             }
         }
     }
