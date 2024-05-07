@@ -1,17 +1,16 @@
-//
-//  TCASimpleApp.swift
-//  TCASimple
-//
-//  Created by WiseMac on 2024-05-06.
-//
-
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct TCASimpleApp: App {
+    
+    private static let store = Store(initialState: BookListReducer.State(), reducer: {
+        BookListReducer()
+    })
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookListView(store: TCASimpleApp.store)
         }
     }
 }

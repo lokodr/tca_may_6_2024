@@ -2,7 +2,7 @@ import ComposableArchitecture
 import Foundation
 
 class BookListReducer: Reducer {
-    struct State {
+    struct State: Equatable {
         var books: [Book]?
     }
 
