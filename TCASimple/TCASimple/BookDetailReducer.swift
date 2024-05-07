@@ -19,7 +19,7 @@ class BookDetailReducer: Reducer {
     func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .fetchCharacters:
-            //Restructure the “fetchCharacters” action within the reduce function to send a request to this client and trigger the “characterFetched” action upon receiving the response.
+            //in the “fetchCharacters” action within the reduce function, send a request to this client and trigger the “characterFetched” action upon receiving the response.
             let characterURLS = state.book.characters
             state.isLoading = true
             return .run { send in
