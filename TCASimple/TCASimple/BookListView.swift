@@ -24,7 +24,12 @@ struct BookListView: View {
                 List {
                     if let books = viewStore.books {
                         ForEach(books, id: \.isbn) { book in
-                            Text(book.name)
+                            /*
+                             To capture user clicks on the options from our book list and open the detail page, I added “NavigationLink” inside the “ForEach.” In essence, this is the SwiftUI NavigationLink we’re familiar with, but it’s called with a specialized init function that accepts a state. We create the state using the selected book and an object of type “BookDetailReducer.State.”
+                             */
+                            NavigationLink(state: BookDetailReducer.State(book: book)) {
+                                Text(book.name)
+                            }.buttonStyle(.borderless)
                         }
                     } else {
                         Text("Book list is empty, refresh the page.")
@@ -42,6 +47,10 @@ struct BookListView: View {
                     }
                 })
             }
+            /*
+             At the end of the view, I write the destination closure. This closure is invoked with the store parameter when a page needs to be opened.
+             Since we only call the detail page, I call “BookDetailView” without customizing it with any store id.
+             */
         }  destination: { store in
             BookDetailView(store: store)
         }
