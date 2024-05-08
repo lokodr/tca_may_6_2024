@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D4276B92BE9ADFA005D6259 /* TCASimpleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276B82BE9ADFA005D6259 /* TCASimpleApp.swift */; };
-		1D4276BB2BE9ADFA005D6259 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276BA2BE9ADFA005D6259 /* ContentView.swift */; };
 		1D4276BD2BE9ADFB005D6259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4276BC2BE9ADFB005D6259 /* Assets.xcassets */; };
 		1D4276C02BE9ADFB005D6259 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4276BF2BE9ADFB005D6259 /* Preview Assets.xcassets */; };
 		1D4276C82BE9AE06005D6259 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1D4276C72BE9AE06005D6259 /* ComposableArchitecture */; };
@@ -17,12 +16,13 @@
 		1D4276CE2BE9B2CC005D6259 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276CD2BE9B2CC005D6259 /* Book.swift */; };
 		1D4276D02BEAECDB005D6259 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276CF2BEAECDB005D6259 /* Character.swift */; };
 		1D4276D22BEAED40005D6259 /* BookDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276D12BEAED40005D6259 /* BookDetailReducer.swift */; };
+		1D4276D42BEAEECD005D6259 /* BookClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4276D32BEAEECD005D6259 /* BookClient.swift */; };
+		1DE017F32BEB08FD00449338 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE017F22BEB08FD00449338 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D4276B52BE9ADFA005D6259 /* TCASimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCASimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4276B82BE9ADFA005D6259 /* TCASimpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCASimpleApp.swift; sourceTree = "<group>"; };
-		1D4276BA2BE9ADFA005D6259 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D4276BC2BE9ADFB005D6259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4276BF2BE9ADFB005D6259 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D4276C92BE9B0B9005D6259 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
@@ -30,6 +30,8 @@
 		1D4276CD2BE9B2CC005D6259 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1D4276CF2BEAECDB005D6259 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		1D4276D12BEAED40005D6259 /* BookDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailReducer.swift; sourceTree = "<group>"; };
+		1D4276D32BEAEECD005D6259 /* BookClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClient.swift; sourceTree = "<group>"; };
+		1DE017F22BEB08FD00449338 /* BookDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,10 @@
 				1D4276B82BE9ADFA005D6259 /* TCASimpleApp.swift */,
 				1D4276C92BE9B0B9005D6259 /* BookListView.swift */,
 				1D4276CB2BE9B1A9005D6259 /* BookListReducer.swift */,
-				1D4276BA2BE9ADFA005D6259 /* ContentView.swift */,
-				1D4276CD2BE9B2CC005D6259 /* Book.swift */,
+				1DE017F22BEB08FD00449338 /* BookDetailView.swift */,
 				1D4276D12BEAED40005D6259 /* BookDetailReducer.swift */,
+				1D4276D32BEAEECD005D6259 /* BookClient.swift */,
+				1D4276CD2BE9B2CC005D6259 /* Book.swift */,
 				1D4276CF2BEAECDB005D6259 /* Character.swift */,
 				1D4276BC2BE9ADFB005D6259 /* Assets.xcassets */,
 				1D4276BE2BE9ADFB005D6259 /* Preview Content */,
@@ -160,11 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4276BB2BE9ADFA005D6259 /* ContentView.swift in Sources */,
 				1D4276CC2BE9B1A9005D6259 /* BookListReducer.swift in Sources */,
 				1D4276D22BEAED40005D6259 /* BookDetailReducer.swift in Sources */,
 				1D4276CA2BE9B0B9005D6259 /* BookListView.swift in Sources */,
+				1DE017F32BEB08FD00449338 /* BookDetailView.swift in Sources */,
 				1D4276D02BEAECDB005D6259 /* Character.swift in Sources */,
+				1D4276D42BEAEECD005D6259 /* BookClient.swift in Sources */,
 				1D4276CE2BE9B2CC005D6259 /* Book.swift in Sources */,
 				1D4276B92BE9ADFA005D6259 /* TCASimpleApp.swift in Sources */,
 			);
