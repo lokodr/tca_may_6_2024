@@ -10,7 +10,11 @@ struct BookListView: View {
 
     var body: some View {
         
-        NavigationView {
+         /// A navigation stack that is driven by a store.
+         ///
+         /// This view can be used to drive stack-based navigation in the Composable Architecture when passed
+         /// a store that is focused on ``StackState`` and ``StackAction``.
+        NavigationStackStore(self.store.scope(state: \.path, action: { .path($0) })) {
             /*
              To update our view as this “store” changes, we need to use a structure called “WithViewStore”. This structure takes the “store” variable as a parameter and the scope we want to observe. Defining the observe scope as “{ $0 }” means it will observe all parameters in the State we created within the Reducer.
              */
@@ -38,6 +42,8 @@ struct BookListView: View {
                     }
                 })
             }
+        }  destination: { store in
+            BookDetailView(store: store)
         }
     }
 }
